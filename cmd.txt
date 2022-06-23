@@ -42,7 +42,6 @@
             or
     insert into info values(1,'AB','Bhoi',22);
 
-    # we can add multiple values like this ,,,
+        # we can add multiple values like this ,,,
 
     insert into info values(1,'AB','Bhoi',22),(2,'Gandhi','Lakh',88);
-    
