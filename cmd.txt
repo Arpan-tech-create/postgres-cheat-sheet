@@ -1,0 +1,48 @@
+#postgres commands...........
+
+
+1. \l 
+        list all the databases which are awailable in postgres
+
+2. \c 
+        connect to other databases
+
+3. \d   
+        display or describe the table
+
+4. \q 
+        to quit
+
+5. create database mydb;
+
+        for creating the database
+
+6. drop database mydb;
+
+        for deleting the database
+
+7. how to create table in database
+
+
+    create table info(id integer not null primary key,fname text not null,lname text not null, age integer not null);
+
+8. create schema mysch;
+
+        for creating schema in database.   here mysch- schema name
+
+9. drop schema mysch
+        delete schema
+
+10 . for entering values in table..
+
+
+    insert into info(id,fname,lname,age)
+    values(1,'AB','Bhoi',22);
+
+            or
+    insert into info values(1,'AB','Bhoi',22);
+
+    # we can add multiple values like this ,,,
+
+    insert into info values(1,'AB','Bhoi',22),(2,'Gandhi','Lakh',88);
+    
