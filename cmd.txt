@@ -125,5 +125,92 @@ mydb=# select * from info;
 
 
 
+14 . SELECT statements.(Queries)
+
+mydb=# select * from info;
+ id |  fname  | lname  | age |    dept
+----+---------+--------+-----+------------
+  1 | Arpan   | Bhoi   |  22 | CSE
+  2 | Bhavin  | Sakh   |  22 | CSE
+  3 | Vaibhav | Patel  |  22 | Civil
+  4 | Ashu    | Bhoi   |  56 | Electrical
+  5 | Tirth   | Patel  |  22 | mech
+  6 | Rakesh  | Patel  |  66 | Electrical
+  8 | Siddhi  | Patel  |  21 | mech
+  7 | Rahul   | Singh  |  45 | IT
+  9 | Rahi    | Patel  |  32 | bsc
+ 10 | INDRA   | Patel  |  22 | mech
+ 11 | manish  | Patel  |  67 | ele
+ 12 | tuger   | Patel  |  22 | ele
+ 13 | dhvani  | Patel  |  23 | mech
+ 14 | carry   | Patel  |  22 | IT
+ 15 | Ashu    | Patel  |  22 | chem
+ 16 | Krunal  | Bhoi   |  25 | IT
+ 17 | darsh   | parmar |  26 | IT
+(17 rows)
+
+
+
+
+Q1 ..........................................
+
+mydb=# select fname,dept,age
+mydb-# from info
+mydb-# where age>=60;
+ fname  |    dept    | age
+--------+------------+-----
+ Rakesh | Electrical |  66
+ manish | ele        |  67
+(2 rows)
+
+
+
+
+Q2............................................
+
+mydb=# select fname
+mydb-# from info
+mydb-# where lname='Patel';
+  fname
+---------
+ Vaibhav
+ Tirth
+ Rakesh
+ Siddhi
+ Rahi
+ INDRA
+ manish
+ tuger
+ dhvani
+ carry
+ Ashu
+(11 rows)
+
+
+
+Q3............................................
+
+mydb=# select fname,dept,age
+mydb-# from info
+mydb-# where age>=20 AND age<=50;
+  fname  | dept  | age
+---------+-------+-----
+ Arpan   | CSE   |  22
+ Bhavin  | CSE   |  22
+ Vaibhav | Civil |  22
+ Tirth   | mech  |  22
+ Siddhi  | mech  |  21
+ Rahul   | IT    |  45
+ Rahi    | bsc   |  32
+ INDRA   | mech  |  22
+ tuger   | ele   |  22
+ dhvani  | mech  |  23
+ carry   | IT    |  22
+ Ashu    | chem  |  22
+ Krunal  | IT    |  25
+ darsh   | IT    |  26
+(14 rows)
+
+
 
 
