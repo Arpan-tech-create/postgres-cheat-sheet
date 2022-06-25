@@ -45,3 +45,60 @@
         # we can add multiple values like this ,,,
 
     insert into info values(1,'AB','Bhoi',22),(2,'Gandhi','Lakh',88);
+
+
+11. update table values (Table Name : emp)
+
+suppose........................
+
+id     fname    lname     age
+
+1.     Arpan     Bhoi     22
+2.     Hello      ji      70
+
+...............................
+
+
+CODE :
+
+update emp
+set fname="Priya"
+where id=2;
+
+
+12. update multiple records :
+
+mydb=# select * from info;
+
+ id |  fname  | lname  | age |    dept
+----+---------+--------+-----+------------
+ 10 | Rahul   | Gandhi |  22 |
+ 11 | Ronak   | Parmar |  25 |
+ 12 | Minku   | Mili   |  21 |
+ 13 | Bhagya  | Megha  |  22 |
+ 14 | Pragna  | Bhoi   |  46 |
+ 15 | Appu    | Bhoi   |  50 |
+  1 | Arpan   | Bhoi   |  22 | CSE
+  2 | Bhavin  | Sakh   |  22 | CSE
+  3 | Vaibhav | Patel  |  22 | Civil
+  4 | Ashu    | Bhoi   |  56 | Electrical
+  5 | Tirth   | Patel  |  22 | mech
+  6 | Rakesh  | Patel  |  66 | Electrical
+  7 | Rahul   | Singh  |  45 | IT
+  8 | Siddhi  | Patel  |  21 | mech
+
+
+
+
+mydb=# update info
+mydb-# set id=8,
+mydb-# dept='mech'
+mydb-# where fname='Siddhi';
+
+
+
+
+
+
+
+
