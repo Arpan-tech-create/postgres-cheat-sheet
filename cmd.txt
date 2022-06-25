@@ -97,6 +97,31 @@ mydb-# where fname='Siddhi';
 
 
 
+13 . add column in table 
+
+mydb=# alter table info
+mydb-# add column dept varchar;
+ALTER TABLE
+mydb=# select * from info;
+ id |  fname  | lname  | age | dept
+----+---------+--------+-----+------
+  1 | Arpan   | Bhoi   |  22 |
+  2 | Bhavin  | Sakh   |  22 |
+  3 | Vaibhav | Patel  |  22 |
+  4 | Ashu    | Bhoi   |  56 |
+  5 | Tirth   | Patel  |  22 |
+  6 | Rakesh  | Patel  |  66 |
+  7 | Rahul   | Singh  |  45 |
+  9 | Siddhi  | Patel  |  21 |
+ 10 | Rahul   | Gandhi |  22 |
+ 11 | Ronak   | Parmar |  25 |
+ 12 | Minku   | Mili   |  21 |
+ 13 | Bhagya  | Megha  |  22 |
+ 14 | Pragna  | Bhoi   |  46 |
+ 15 | Appu    | Bhoi   |  50 |
+(14 rows)
+
+
 
 
 
