@@ -213,4 +213,51 @@ mydb-# where age>=20 AND age<=50;
 
 
 
+15. Delete 
 
+mydb=# delete from info
+mydb-# where id=17;
+DELETE 1
+mydb=# select * from info;
+ id |  fname  | lname | age |    dept
+----+---------+-------+-----+------------
+  1 | Arpan   | Bhoi  |  22 | CSE
+  2 | Bhavin  | Sakh  |  22 | CSE
+  3 | Vaibhav | Patel |  22 | Civil
+  4 | Ashu    | Bhoi  |  56 | Electrical
+  5 | Tirth   | Patel |  22 | mech
+  6 | Rakesh  | Patel |  66 | Electrical
+  8 | Siddhi  | Patel |  21 | mech
+  7 | Rahul   | Singh |  45 | IT
+  9 | Rahi    | Patel |  32 | bsc
+ 10 | INDRA   | Patel |  22 | mech
+ 11 | manish  | Patel |  67 | ele
+ 12 | tuger   | Patel |  22 | ele
+ 13 | dhvani  | Patel |  23 | mech
+ 14 | carry   | Patel |  22 | IT
+ 15 | Ashu    | Patel |  22 | chem
+ 16 | Krunal  | Bhoi  |  25 | IT
+(16 rows)
+
+
+
+
+
+15A.... delete all the data
+
+info=# select * from accounts;
+ name  |         email
+-------+------------------------
+ Arpan | bhoiarpan123@gmail.com
+ DOLLY | krp@gmail.com
+(2 rows)
+
+
+
+
+info=# delete from accounts;
+DELETE 2
+info=# select * from accounts;
+ name | email
+------+-------
+(0 rows)
